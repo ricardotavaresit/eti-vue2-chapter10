@@ -3,6 +3,7 @@
 <h2>Chapter 10 - Advanced operations on components</h2>
 
 - Class 01: Communication between components in Vue JS
+- Class 02: Props in Vue JS
 
 
 ## Technologies used
