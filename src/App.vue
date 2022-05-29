@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <tasks-component />
+    <tasks-component v-bind:items="['Task 1', 'Task 2', 'Task 3']" v-bind:title="'Best Task List '" />
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
+      msg: "Welcome to Your Vue.js App"
     };
   },
   components: {
