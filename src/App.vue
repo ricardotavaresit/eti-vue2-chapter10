@@ -2,11 +2,14 @@
   <div id="app">
     <h1>{{ msg }}</h1>
     <tasks-component v-bind:items="['Task 1', 'Task 2', 'Task 3']" v-bind:title="'Best Task List '" />
+    <listItems-component v-bind:title="asasas"/>
   </div>
 </template>
 
 <script>
 import TasksComponent from "./components/TasksComponent";
+import ListItemsComponent from "./components/ListItemsComponent";
+
 export default {
   name: "app",
   data() {
@@ -16,6 +19,7 @@ export default {
   },
   components: {
     TasksComponent,
+    ListItemsComponent
   },
 };
 </script>
