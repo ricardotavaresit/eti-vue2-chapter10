@@ -1,0 +1,23 @@
+<template>
+  <div>
+    {{ title }}
+  </div>
+
+</template>
+
+<script>
+export default {
+  props:{
+    title:{
+      required: true,
+      type: String,
+      default: ""
+    }
+  },
+}
+
+</script>
+
+
+<style>
+</style>
