@@ -4,6 +4,7 @@
 
 - Class 01: Communication between components in Vue JS
 - Class 02: Props in Vue JS
+- Class 03: Advanced props in Vue JS
 
 
 ## Technologies used
