@@ -2,6 +2,8 @@
   <div>
     <h2>{{ title }}</h2>
 
+    <input type="text" v-model="task" />
+
     <button v-on:click.prevent="callParent"> Call Father</button>
 
 
@@ -18,13 +20,15 @@ export default {
   props: ["items", "title"],
   data() {
     return {
-
+      task:''
     };
   },
   methods:{
     callParent(){
-       alert("callParent");
-      this.$emit('callParent')
+      this.$emit('callParent', this.task)
+
+      this.task = ''
+
     }
   }
 };
