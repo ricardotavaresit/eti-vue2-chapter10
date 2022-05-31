@@ -1,6 +1,10 @@
 <template>
   <div>
-    {{ title }}
+    <h2>{{ title }}</h2>
+
+    <button v-on:click.prevent="callParent"> Call Father</button>
+
+
     <ul>
       <li v-bind:key="index" v-for="(item, index) in items" > {{ item }}</li>
     </ul>
@@ -17,6 +21,12 @@ export default {
 
     };
   },
+  methods:{
+    callParent(){
+       alert("callParent");
+      this.$emit('callParent')
+    }
+  }
 };
 </script>
 
