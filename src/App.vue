@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <tasks-component v-bind:items="['Task 1', 'Task 2', 'Task 3']" v-bind:title="'Best Task List '" />
+    <tasks-component v-bind:items="['Task 1', 'Task 2', 'Task 3']" v-bind:title="'Best Task List '" v-on:callParent="answerSon" />
     <listItems-component v-bind:title="'List of...'" v-bind:items="['Value 1', 'Value 2', 'Value 3']"/>
     <listItems-component v-bind:title="'List of products'" v-bind:items="['Product 1', 'Product 2', 'Product 3']"/>
   </div>
@@ -22,6 +22,11 @@ export default {
     TasksComponent,
     ListItemsComponent
   },
+  methods:{
+    answerSon(){
+      alert("answerSon");
+    }
+  }
 };
 </script>
 
