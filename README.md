@@ -6,6 +6,7 @@
 - Class 02: Props in Vue JS
 - Class 03: Advanced props in Vue JS
 - Class 04: Emit in Vue JS
+- Class 05: Emit parameters in Vue JS
 
 
 ## Technologies used
